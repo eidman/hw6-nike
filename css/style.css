@@ -32,9 +32,24 @@ img {
 }
 
 .icons {
+  display: inline-block;
   color: grey;
-  padding: 50px 50px;
+  border-bottom: 1px solid #D3D3D3;
+  padding: 20px;
 }
+
+.icons a {
+  font-size: 12px;
+}
+
+.icons a, .icons span {
+  font-size: 15px;
+  text-decoration: none;
+  color: grey;
+  padding: 20px 20px;
+  border-right: 1px solid #D3D3D3;
+}
+
 
 .icons a:hover {
   color: blue;
@@ -43,7 +58,10 @@ img {
 .topnav{
     text-align:center;
     border-bottom: 1px solid #D3D3D3;
+    z-index: 2;
 }
+
+/* HOW TO GET BORDER LINE TO OVERLAP IMG?? */
 
 .topnav a{
   display: inline-block;
