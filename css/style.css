@@ -54,9 +54,6 @@ img {
 
 .icons {
   display: inline-block;
-  color: grey;
-  border-bottom: 1px solid #D3D3D3;
-  padding: 10px;
 }
 
 .icons a {
@@ -75,34 +72,42 @@ img {
   color: #000;
 }
 
-.nav-links {
-    text-align:center;
-    border-bottom: 1px solid #D3D3D3;
-    z-index: 2;
+.nav-icons {
+  border-bottom: 1px solid #D3D3D3;
+  padding: 10px 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-bottom: 1px solid #D3D3D3;
 }
 
 /* HOW TO GET BORDER LINE TO OVERLAP IMG?? */
 
-.nav-links a{
+.nav-links li {
   display: inline-block;
-  font-family: "Nike-regular";
-  font-size: 15.5px;
-  color: #000;
-  letter-spacing: .4px;
   padding: 20px;
   padding: 30px 20px;
-  right: 20%;
-  left: 20%;
-  text-decoration: none;
 }
 
-.nav-links a:hover {
+.nav-links li:hover {
   border-bottom: 2px solid #111;
   padding-bottom: 28px;
 }
 
+.nav-links li a {
+  font-family: "Nike-regular";
+  font-size: 15.5px;
+  color: #000;
+  letter-spacing: .4px;
+  text-decoration: none;
+}
+
 .input-container {
-  border: 1px solid black;
+  border: 1px solid #D3D3D3;
   display: inline-block;
   padding: 5px 10px;
 }
@@ -110,6 +115,7 @@ img {
 .input-container input {
   border: none;
   padding: 5px 10px;
+  font-size: 13px;
 }
 
 .input-container input:focus {
