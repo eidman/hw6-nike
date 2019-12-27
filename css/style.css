@@ -31,6 +31,11 @@ img {
   display: flex;
 }
 
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -104,7 +109,7 @@ header {
 .nav-links li a {
   font-family: "Nike-regular";
   font-size: 15.5px;
-  color: #000;
+  color: #111;
   letter-spacing: .4px;
   text-decoration: none;
 }
@@ -141,14 +146,7 @@ header {
 
 .image-container {
   width: 100%;
-}
-
-.text-container {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  right: 60%;
-  bottom: 0;
+  margin-bottom: 90px;
 }
 
 .text-container h1 {
@@ -162,7 +160,6 @@ header {
 }
 
 .text-container p {
-  font-family: "Helvetica Neue";
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -171,12 +168,45 @@ header {
   width: 65%;
 }
 
+.text-hero-one {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 60%;
+  bottom: 0;
+}
+
+.title-text p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.text-hero-two {
+  position: absolute;
+  top: 240px;
+  left: 30px;
+  right: 60%;
+  bottom: 0;
+}
+
+.text-hero-two h1 {
+  font-size: 41px;
+  line-height: 36px;
+  letter-spacing: -1.5px;
+}
+
 button {
     font-family: "Helvetica Neue";
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
     padding: 8px;
+    opacity: 1;
+    transition: 0.3s;
+    border: none;
   }
 
 .pill-button {
@@ -193,4 +223,27 @@ button {
 
 button:hover {
     opacity: .8;
+}
+
+.section-three-card {
+  width: calc(100% / 2 - 8px);
+}
+
+.section-three-card .section-three-image {
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/product/desktop/product_8.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.section-three-card-header {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  bottom: 150px;
+  left: 50px;
 }
