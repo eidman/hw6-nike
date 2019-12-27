@@ -81,16 +81,19 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 20px;
+  padding: 0px 20px;
   border-bottom: 1px solid #D3D3D3;
+}
+
+.swoosh span {
+  font-size: 28px;
 }
 
 /* HOW TO GET BORDER LINE TO OVERLAP IMG?? */
 
 .nav-links li {
   display: inline-block;
-  padding: 20px;
-  padding: 30px 20px;
+  padding: 28px 20px;
 }
 
 .nav-links li:hover {
@@ -109,12 +112,18 @@ header {
 .input-container {
   border: 1px solid #D3D3D3;
   display: inline-block;
-  padding: 5px 10px;
+  padding: 0px;
+  border-radius: 2px;
+}
+
+.input-container span {
+  font-size: 20px;
+  padding: 30px 5px;
 }
 
 .input-container input {
   border: none;
-  padding: 5px 10px;
+  padding: 10px 10px;
   font-size: 13px;
 }
 
@@ -143,21 +152,45 @@ header {
 }
 
 .text-container h1 {
-  font-size: 55px;
+  font-size: 65px;
+  line-height: 55px;
   letter-spacing: -2px;
   font-family: Nike, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: #fff;
-}
-
-h2 {
-  font-size: 50px;
-  font-family: Nike, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .text-container p {
-  font-family: Nike;
-  font-size: 15px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
   color: #fff;
+  margin-bottom: 24px;
+  width: 65%;
+}
+
+button {
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 8px;
+  }
+
+.pill-button {
+    text-align: center;
+    border-radius: 25px;
+    background-color: #fff;
+    width: 100px;
+}
+
+.pill-button a {
+    text-decoration: none;
+    color: #111;
+}
+
+button:hover {
+    opacity: .8;
 }
