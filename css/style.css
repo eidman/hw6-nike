@@ -27,6 +27,9 @@ img {
   width: 100%;
 }
 
+
+/* helpers */
+
 .flex {
   display: flex;
 }
@@ -42,13 +45,16 @@ img {
   justify-content: center;
 }
 
-.cta-top {
+
+/* black cta bar */
+
+.black-bar {
   width: 100%;
   height: 55px;
   background-color: #000;
 }
 
-.cta-top p {
+.black-bar p {
   color: white;
   size: 14px;
   display: flex;
@@ -57,44 +63,81 @@ img {
   padding: 18px;
 }
 
-.icons {
-  display: inline-block;
-}
-
-.icons a {
-  font-size: 12px;
-}
-
-.icons a, .icons span {
-  font-size: 13px;
-  text-decoration: none;
-  color: grey;
-  padding: 10px 20px;
-  border-right: 1px solid #D3D3D3;
-}
-
-.icons span:hover {
-  color: #000;
-}
-
-.nav-icons {
-  border-bottom: 1px solid #D3D3D3;
-  padding: 10px 10px;
-}
-
 header {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+
+/* grey navbar */
+
+.header-grey {
+  display: flex;
   justify-content: space-between;
   padding: 0px 20px;
-  border-bottom: 1px solid #D3D3D3;
+}
+
+.info-icons {
+  align-items: bottom;
+}
+
+.info-icons li {
+  padding: 10px 12px;
+}
+
+.info-icons a {
+  font-size: 11.5px;
+  text-decoration: none;
+  color: grey;
+}
+
+.info-icons span {
+  font-size: 18px;
+}
+
+.info-icons li:hover {
+  border-bottom: 2px solid #111;
+  padding-bottom: 10px;
+}
+
+.info-icons a:hover {
+  color: #111;
+}
+
+.logos-container {
+  display: inline-block;
+}
+
+.logos-container a {
+  font-size: 12px;
+}
+
+.logos-container span:hover {
+  color: rgb(31, 31, 31);
+}
+
+.logos-container a, .logos-container span {
+  font-size: 13px;
+  text-decoration: none;
+  color:grey;
+  padding: 0px 20px;
+  border-right: 1px solid #D3D3D3;
+}
+
+/* black navbar */
+
+header-black {
+  justify-content: space-between;
+  padding: 0px 20px;
 }
 
 .swoosh span {
   font-size: 28px;
+  margin: 0px 0px 0px 20px;
 }
 
-/* HOW TO GET BORDER LINE TO OVERLAP IMG?? */
+/* HOW TO GET HOVER UNDERLINE TO OVERLAP IMG?? */
 
 .nav-links li {
   display: inline-block;
@@ -115,10 +158,11 @@ header {
 }
 
 .input-container {
+  display: flex;
   border: 1px solid #D3D3D3;
   display: inline-block;
-  padding: 0px;
   border-radius: 2px;
+  margin: 0px 20px 0px 0px;
 }
 
 .input-container span {
@@ -135,6 +179,9 @@ header {
 .input-container input:focus {
   outline: none;
 }
+
+
+/* main content */
 
 .container {
   padding: 0px 50px;
@@ -153,8 +200,7 @@ header {
 
 .lebron-17
  {
-  width: 100%;
-  height: 600px;
+  height: 800px;
   background-image: url(../images/product/desktop/product_5.jpg);
   background-repeat: no-repeat;
   background-position: center;
