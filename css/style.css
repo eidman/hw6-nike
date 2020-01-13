@@ -201,11 +201,17 @@ header-black {
   padding: 0px 50px;
 }
 
-.card {
-  position: relative;
+/* FULL WIDTH SECTIONS */
+.full-width {
+  width: 100%;
+  margin-bottom: 70px;
 }
 
-.text-container h1 {
+.full-width h2 {
+  margin-bottom: 25px;
+}
+
+h1 {
   font-size: 65px;
   line-height: 55px;
   letter-spacing: -2px;
@@ -290,17 +296,6 @@ button:hover {
   width: calc(100% / 2 - 8px);
 }
 
-.section-three-card .section-three-image {
-  width: 100%;
-  height: 600px;
-  background-image: url(../images/product/desktop/product_8.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 10px;
-  position: relative;
-}
-
 .section-three-card-header {
   color: #fff;
   font-size: 20px;
@@ -309,25 +304,14 @@ button:hover {
   left: 5%;
 }
 
-.jerseys {
-  height: 800px;
-  background-image: url(../images/product/desktop/product_9.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 90px;
-  position: relative;
-}
+/* ONE IMAGE */
 
-/* IMAGES */
-
-.lebron-17 {
-  height: 800px;
-  background-image: url(../images/product/desktop/product_5.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+.full-width-image {
+  width: 100%;
+  height: 700px;
+  color: #fff;
   background-size: cover;
-  margin-bottom: 90px;
+  background-position: center;
   position: relative;
 }
 
