@@ -315,6 +315,33 @@ button:hover {
   position: relative;
 }
 
+.full-width-image.short {
+  height: 600px;
+}
+
+.full-width-text {
+  position: absolute;
+  top: 48px;
+  left: 48px;
+}
+
+.full-width-text.bottom {
+  top: inherit;
+  bottom: 48px;
+}
+
+.full-width-text h1 {
+  margin-bottom: 8px;
+}
+
+.full-width-text h3 {
+  margin-bottom: 8px;
+}
+
+.full-width-text p {
+  margin-bottom: 24px;
+}
+
 #hero-image {
   background-image: url(../images/product/desktop/product_5.jpg);
 }
