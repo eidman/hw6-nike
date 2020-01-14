@@ -29,7 +29,44 @@ img {
   width: 100%;
 }
 
-/* FLEX */
+/* FONT DEFAULTS */
+h1 {
+  font-size: 72px;
+  font-weight: 600;
+  font-family: Nike, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 0.83;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 0.83;
+  font-family: Nike, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+/* FLEX UTILS */
 .flex {
   display: flex;
   align-items: flex-start;
@@ -65,140 +102,54 @@ img {
   justify-content: space-around;
 }
 
-/* NAV */
-/* black cta bar */
-.black-bar {
-  width: 100%;
-  height: 55px;
-  background-color: #000;
-}
-
-.black-bar p {
-  color: white;
-  size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 18px;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #d3d3d3;
-}
-
-/* grey navbar */
-.header-grey {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 20px;
-}
-
-.info-icons {
-  align-items: bottom;
-}
-
-.info-icons li {
-  padding: 10px 12px;
-}
-
-.info-icons a {
-  font-size: 11.5px;
+/* BUTTONS */
+a.btn {
+  background-color: #fff;
+  color: #000;
   text-decoration: none;
-  color: grey;
-}
-
-.info-icons span {
-  font-size: 18px;
-}
-
-.info-icons li:hover {
-  border-bottom: 2px solid #111;
-  padding-bottom: 10px;
-}
-
-.info-icons a:hover {
-  color: #111;
-}
-
-.logos-container {
+  padding: 8px 28px;
+  border-radius: 20px;
   display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: background-color 0.5s;
 }
 
-.logos-container a {
-  font-size: 12px;
+a.btn:hover {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-.logos-container span:hover {
-  color: rgb(31, 31, 31);
+a.btn.btn-dark {
+  background-color: rgb(17, 17, 17);
+  color: #fff;
 }
 
-.logos-container a,
-.logos-container span {
-  font-size: 13px;
-  text-decoration: none;
-  color: grey;
-  padding: 0px 20px;
-  border-right: 1px solid #d3d3d3;
+a.btn.btn-dark:hover {
+  background-color: rgba(17, 17, 17, 0.7);
 }
 
-/* black navbar */
-header-black {
-  justify-content: space-between;
-  padding: 0px 20px;
+/* TRANSPARENT */
+.transparent {
+  opacity: 0.5;
 }
 
-.swoosh span {
-  font-size: 28px;
-  margin: 0px 0px 0px 20px;
+.transparent.hover {
+  transition: opacity 0.5s;
 }
 
-/* HOW TO GET HOVER UNDERLINE TO OVERLAP IMG?? */
-.nav-links li {
-  display: inline-block;
-  padding: 28px 20px;
+.transparent.hover:hover {
+  opacity: 1;
 }
 
-.nav-links li:hover {
-  border-bottom: 2px solid #111;
-  padding-bottom: 28px;
+.transparent:hover {
+  opacity: 1;
 }
 
-.nav-links li a {
-  font-family: "Nike-regular";
-  font-size: 15.5px;
-  color: #111;
-  letter-spacing: 0.4px;
-  text-decoration: none;
-}
-
-.input-container {
-  display: flex;
-  border: 1px solid #d3d3d3;
-  display: inline-block;
-  border-radius: 2px;
-  margin: 0px 20px 0px 0px;
-}
-
-.input-container span {
-  font-size: 20px;
-  padding: 30px 5px;
-}
-
-.input-container input {
-  border: none;
-  padding: 10px 10px;
-  font-size: 13px;
-}
-
-.input-container input:focus {
-  outline: none;
-}
-
-/* CONTENT */
+/* CONTAINER */
 .container {
-  padding: 0px 50px;
+  width: 100%;
+  padding: 0px 48px;
 }
 
 /* FULL WIDTH SECTIONS */
@@ -211,107 +162,12 @@ header-black {
   margin-bottom: 25px;
 }
 
-h1 {
-  font-size: 65px;
-  line-height: 55px;
-  letter-spacing: -2px;
-  font-family: Nike, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.text-container p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #fff;
-  margin-bottom: 24px;
-  width: 65%;
-}
-
-.title-text p {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  color: #111;
-  margin-bottom: 30px;
-}
-
-.text-hero-one {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  right: 60%;
-  bottom: 0;
-}
-
-.winter-workout {
-  position: relative;
-}
-
-.text-hero-two {
-  position: absolute;
-  top: 60%;
-  left: 5%;
-  right: 0;
-  bottom: 35%;
-}
-
-.text-hero-two h1 {
-  font-size: 41px;
-  line-height: 36px;
-  letter-spacing: -1.5px;
-}
-
-/* BUTTONS */
-button {
-  font-family: "Helvetica Neue";
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding: 8px;
-  opacity: 1;
-  transition: 0.3s;
-  border: none;
-}
-
-.pill-button {
-  text-align: center;
-  border-radius: 25px;
-  background-color: #fff;
-  width: 100px;
-}
-
-.pill-button a {
-  text-decoration: none;
-  color: #111;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-.section-three-card {
-  width: calc(100% / 2 - 8px);
-}
-
-.section-three-card-header {
-  color: #fff;
-  font-size: 20px;
-  position: absolute;
-  bottom: 10%;
-  left: 5%;
-}
-
 /* ONE IMAGE */
-
 .full-width-image {
   width: 100%;
   height: 700px;
   color: #fff;
   background-size: cover;
-  background-position: center;
   position: relative;
 }
 
@@ -341,6 +197,40 @@ button:hover {
 .full-width-text p {
   margin-bottom: 24px;
 }
+
+/* TWO IMAGES */
+.full-width-dual-image {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.full-width-dual-image .image {
+  width: calc(50% - 10px);
+  height: 600px;
+  background-size: cover;
+  position: relative;
+}
+
+.full-width-dual-text {
+  position: absolute;
+  left: 48px;
+  bottom: 48px;
+  color: #fff;
+}
+
+.full-width-dual-text.dark {
+  color: #111;
+}
+
+.full-width-dual-text p {
+  margin-bottom: 20px;
+  font-size;
+}
+
+
+/* THREE IMAGES */
+
 
 #hero-image {
   background-image: url(../images/product/desktop/product_5.jpg);
@@ -382,24 +272,52 @@ button:hover {
   background-image: url(../images/product/desktop/product_3.jpg);
 }
 
-/* MOBILE */
-@media only screen and (max-width: 1080px) {
-  .container {
-    padding: 0px 15px;
-  }
+/* LINK LIST */
+.link-list {
+  width: 100%;
+  margin-bottom: 50px;
 }
 
-@media only screen and (min-width: 1068px) {
-  .hero-mobile {
-    display: none;
-  }
+.link-list ul {
+  width: 200px;
 }
 
-@media only screen and (max-width: 1068px) {
-  .hero-mobile {
-    display: inherit;
-  }
-  .hero-desktop {
-    display: none;
-  }
+.link-list li:first-child {
+  margin-bottom: 35px;
+  font-weight: 500;
 }
+
+.link-list li:not(:first-child) {
+  margin-bottom: 20px;
+}
+
+.link-list a {
+  color: #8d8d8d;
+  transition: color: 0.5s;
+}
+
+.link-list a:hover {
+  color: #111;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
